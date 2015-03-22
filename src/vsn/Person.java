@@ -15,7 +15,7 @@ public class Person {
 
     private String Name;
     private ArrayList<Meeting> meetingsInitiated; //meetings the person has initiated
-    private ArrayList<Meeting> meetingsInvited;
+    private ArrayList<Meeting> meetingsInvited; //meetings he has been invited to
 //    private int Priority;
 
     /*
