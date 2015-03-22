@@ -14,8 +14,8 @@ import java.util.*;
 public class Person {
 
     private String Name;
-    private ArrayList<Meeting> meetingsInitiated; //meetings the person has initiated
-    private ArrayList<Meeting> meetingsInvited; //meetings he has been invited to
+    private ArrayList<Meeting> meetingsInitiated = new ArrayList<Meeting>();
+    private ArrayList<Meeting> meetingsInvited = new ArrayList<Meeting>();
 //    private int Priority;
 
     /*

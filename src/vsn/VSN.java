@@ -76,7 +76,7 @@ public class VSN {
         System.out.println("Enter Minimum Priority of a Meeting : ");
         MinMeetingP = in.nextInt();
         
-        System.out.println("Enter Maximum Priority of a Person : ");
+        System.out.println("Enter Maximum Priority of a Meeting : ");
         MaxMeetingP = in.nextInt();
         
         System.out.println("Enter Estimated time (int Minutes) for negotiation (Delta):");

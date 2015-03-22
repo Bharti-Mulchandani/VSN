@@ -81,7 +81,11 @@ public class Utilities {
             meet.setInitiator(mPerson.get(randAll.nextInt(mPerson.size())));
             
             meet.setQuorum(randAll.nextInt((Attendees-essentialCount)+1)+essentialCount);
-            meet.setPreferredTimeSlot(randAll.nextInt((meet.getHardDeadLine()-meet.getStartTime())+1)+meet.getStartTime());
+//            System.out.println(meet.getHardDeadLine()+"::::::"+meet.getStartTime());
+//            if(meet.getHardDeadLine()<meet.getStartTime()){
+//                System.out.println("HERE");
+//            }
+            meet.setPreferredTimeSlot(randAll.nextInt((Math.abs(meet.getHardDeadLine()-meet.getStartTime()))+1)+meet.getStartTime());
             
             meet.setMeetingPriority(randAll.nextInt((MaxMeetingP-MinMeetingP)+1)+MinMeetingP);
 
@@ -94,7 +98,7 @@ public class Utilities {
             meet.getInitiator().setMeetingInitiated(meet);
             meetings.add(meet);
         }
-        return null;
+        return meetings;
     }
 
     public int ConvertDurationToSlots(int Duration) {

@@ -13,7 +13,7 @@ public class Agent {
     private String name;
 
     public Agent(String name){
-        name = name;
+        this.name = name;
     }
     /**
      * @return the name
